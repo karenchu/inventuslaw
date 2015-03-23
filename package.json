@@ -23,7 +23,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/karenchu/inventuslaw.git"
+    "url": "https://github.com/karenchu/inventuslaw/.git"
   },
   "bugs": {
     "url": "https://github.com/karenchu/inventuslaw/issues"
