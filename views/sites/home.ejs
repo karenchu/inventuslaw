@@ -16,6 +16,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="stylesheets/main.css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    	<script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.4/mapbox.js'></script>
+
+    	<link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
+
 
 </head>
 <body>
@@ -41,6 +45,7 @@
 		            <li><a href="#team">TEAM</a></li>
 		            <li><a href="#practiceareas">PRACTICE AREAS</a></li>
 		            <li><a href="#feestructure">FEE STRUCTURE</a></li>
+		            <li><a href="#clientstransactions">CLIENTS &amp; TRANSACTIONS</a></li>
 		            <li><a href="#resources">RESOURCES</a></li>
 		            <li><a href="#contactus">CONTACT US</a></li>
 	        <!-- <li class="dropdown">
@@ -90,15 +95,95 @@
   	
   	<header class="splash" id="home">
   		<div class="container" id="page">
-	<br><br><br><br><br><br><br><br>
-			<div class="row">
+	<br><br><br>
+			<!-- <div class="row">
   				<div class="col-xs-6 col-sm-4"></div>
 				<div class="col-xs-6 col-sm-4">
 					<img id="logo" src="http://inventuslaw.com/images/logo.png" />
 				</div>
 				<div class="col-xs-6 col-sm-4"></div>
-			</div>	
+			</div>	 -->
+			<div class="col-xs-5 col-md-5 col-lg-5 col-xs-offset-1">
+				<div class="row" id="text">
+					<div id="box">
+						<h1>WELCOME</h1>
+						<p>Inventus Law is an innovative business law firm founded by experienced and successful Silicon Valley attorneys and other legal professionals. Our primary goal is to become a partner in our clients' success, and not merely a cost center. We see ourselves as an integral part of a client's management team and often function as "virtual general counsel," whether hired for a specific project or on an ongoing basis.<br>
+						<br>
+						We focus on providing guidance to small to mid-size private companies, large U.S. multinational corporations looking at strategic initiatives in the Indian market, and foreign multinationals looking to expand in the United States.
+						<br>
+						<br>
+<!-- 						<a href="#contactus">Contact Us</a></p>
+ -->					</div>
+				</div>
+<!-- 				<div class="col-xs-6 col-md-6 col-lg-6">
+					<div id="box">
+						<h1>WELCOME</h1>
+						<p>Inventus Law is an innovative business law firm founded by experienced and successful Silicon Valley attorneys and other legal professionals. Our primary goal is to become a partner in our clients' success, and not merely a cost center. We see ourselves as an integral part of a client's management team and often function as "virtual general counsel," whether hired for a specific project or on an ongoing basis.<br>
+						<br>
+						We focus on providing guidance to small to mid-size private companies, large U.S. multinational corporations looking at strategic initiatives in the Indian market, and foreign multinationals looking to expand in the United States.</p>
+					</div>
+				</div> -->
+			<br>
+				<div class="row" id="text">
+<!-- 				<div class="col-xs-6 col-md-6 col-lg-6">
+ -->					<div id="box">
+							<p id="quote1">"Anil was our lawyer at StackLead and advised us during our acquisition by LinkedIn. Anil and Inventus Law were referred by Y Combinator, a big endorsement from an organization that’s a thought leader for startups and VCs.<br>
+							<br>
+							Our experience with Inventus Law was excellent. Anil was a great communicator, always willing to answers questions over email or phone at just about any hour. He always seems to have the right answer and understands the challenges of running a startup. I remember one particular phone call with a third party counsel when Anil helped deliver a successful business outcome for all parties.<br>
+							<br>
+							The fee structure was reasonable and we were impressed by the hard work from the rest of Anil’s team at Inventus Law. For legal advice with future companies, Anil will be my first call."<br>
+							</p>
+							<p>Gordon Wintrob, CEO, Stacklead, Inc. (acquired by LinkedIn)</p>
+						</div>
+<!-- 				</div>
+ -->			</div>
+			</div><br>
+			<div class="col-xs-5 col-md-5 col-lg-5" id="box">
+				<div id="text">
+					<h1 id="inquire">INQUIRE BELOW</h1>
+
+<!-- 			    		<div id="map"></div>
+ -->			    	
+						<form class="form-horizontal" method="post">
+							<br>
+	                    	<fieldset>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12">
+		                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12">
+		                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12">
+		                                <input id="phone" name="phone" type="tel" placeholder="Phone Number" class="form-control">
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12">
+		                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12">
+		                                <textarea class="form-control" id="message" name="message" placeholder="Message" rows="7"></textarea>
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                            <div class="col-xs-12 col-md-12 col-lg-12 text-center">
+		                                <button type="submit" class="btn btn-inverse">Send</button>
+		                            </div>
+		                        </div>
+	                    	</fieldset>
+	               	 	</form>
+					</div>
+			    </div>
+			</div>
 		</div>
+
   	</header>
 
   	<section id="aboutus">
@@ -145,11 +230,22 @@
 		</div>
 	</section>
 
-  	<footer id="practiceareas">
+  	<footer>
   		<div class="row">
-  			<div class="col-xs-12 col-sm-6 col-md-6">
 
-  			</div>
+        <div class="footer-inner">
+			<div class="container">
+          		<div class="row small"></div>
+					<div class="row" id="end">
+						<li><a href="#disclaimer">Disclaimer</a></li>
+						<li><a href="#termsofuse">Terms of Use &amp; Privacy Policy</a></li>
+					</div>
+					<div class="row">
+						<small>Copyright &copy; 2015, Inventus Law</small>
+					</div>
+			</div>
+		</div>
+    </footer>
   			<!-- <div class="col-xs-12 col-sm-6 col-md-6">
   				<h1>//contact</h1>
   				<br>
@@ -190,6 +286,10 @@
 		</div>
   	</footer>
 
+  	<script>
+		L.mapbox.accessToken = 'pk.eyJ1Ijoib2NlYW5jaGlsZDYzNyIsImEiOiJxVkhhRTg4In0.Tt6s5ijiS4a3ElrxYg8sSg';
+		var map = L.mapbox.map('map', 'oceanchild637.l6bgnkcj')
+	</script>
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
